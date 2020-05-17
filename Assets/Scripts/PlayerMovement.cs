@@ -28,7 +28,15 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        xScale = transform.localScale.x;
+        // Get the original x scale
+        if (transform.localScale.x > 0)
+        {
+            xScale = transform.localScale.x;
+        }
+        else
+        {
+            xScale = transform.localScale.x * -1;
+        }
     }
 
     void Update()
@@ -40,13 +48,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() {
 
-        if (walking) {
-
+        if (walking)
+        {
             // Set the target velocity to the horizontal movement reading
             Vector3 targetVelocity = new Vector2(horizontalMove * speed, rb.velocity.y);
 
             // Smooth and move
 			rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref zeroVelocity, movementSmoothing);
+        }
+        else
+        {
+            // If not walking, stop horizontal velocity
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
 
@@ -56,12 +69,15 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal");
 
         // Set animator values if player is moving
-        if (horizontalMove != 0) {
+        if (horizontalMove != 0)
+        {
 
             // Set animator parameter
             animator.SetFloat("Horizontal", horizontalMove);
 
-        } else {
+        }
+        else
+        {
 
             // Stop walking if not moving
             walking = false;
@@ -71,27 +87,33 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         // If grounded and space key pressed, jump
-        if (grounded() && Input.GetKeyDown("space")) {
+        if (grounded() && Input.GetKeyDown("space"))
+        {
             animator.SetBool("Jumping", true);
             rb.AddForce(new Vector2(0, jumpForce));
-        } else {
+        }
+        else
+        {
             animator.SetBool("Jumping", false);
         }
     }
 
-    void UpdateDirection() {
+    void UpdateDirection()
+    {
 
         // Update the direction the player is facing based on movement
         if (horizontalMove == 1) transform.localScale = new Vector3(-1 * xScale, transform.localScale.y, transform.localScale.z);
         if (horizontalMove == -1) transform.localScale = new Vector3(xScale, transform.localScale.y, transform.localScale.z);
     }
 
-    void StartWalk() {
+    void StartWalk()
+    {
         walking = true;
     }
 
     // Whether the player is on the ground
-    bool grounded() {
+    bool grounded()
+    {
         if (rb.velocity.y == 0) return true;
         return false;
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 347d5c44f64d945899ff17c097c394ae
+guid: 658187cbe31bf4fc0bbcdfd6e715126e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: 6093225430303232669
+      74: -1422011007694221501
     second: Feet_Start_Walk
   externalObjects: {}
   materials:
@@ -36,17 +36,17 @@ ModelImporter:
     clipAnimations:
     - serializedVersion: 16
       name: Feet_Start_Walk
-      takeName: Armature|ArmatureAction.002
+      takeName: Armature|ArmatureAction.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -59,7 +59,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.7527675
+      - time: 0.8302583
         functionName: StartWalk
         data: 
         objectReferenceParameter: {instanceID: 0}

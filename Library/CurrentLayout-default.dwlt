@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -419,7 +419,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 44faffff6afbffffce390000
+      m_ExpandedIDs: 16e9feff2ce9feffe6e9feff3a05ffff4e05ffff0806ffff0a0bffffce4bffff0856ffff6afbffffa63a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -479,9 +479,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.3993406, y: -5.748073, z: -126.36328}
+    m_Target: {x: 0.027270675, y: -1.4401026, z: -10.599609}
     speed: 2
-    m_Value: {x: -3.3993406, y: -5.748073, z: -126.36328}
+    m_Value: {x: 0.027270675, y: -1.4401026, z: -10.599609}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -531,9 +531,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 26.30339
+    m_Target: 14.121434
     speed: 2
-    m_Value: 26.146507
+    m_Value: 14.121434
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -551,7 +551,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.0073081083, y: 0.9926207, z: -0.0913892, w: 0.079380766}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -616,14 +616,14 @@ MonoBehaviour:
     - {fileID: 631569920359946987, guid: 2f0cd7b55fab0493fa8d38131682431e, type: 2}
     - {fileID: 5974541118663352288, guid: 2f0cd7b55fab0493fa8d38131682431e, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.7376082
+    - e00: 0.6151794
       e01: 0
       e02: 0
-      e03: 92.54331
+      e03: 148.4916
       e10: 0
-      e11: 0.7376082
+      e11: 0.6151794
       e12: 0
-      e13: 64.32167
+      e13: 25.66343
       e20: 0
       e21: 0
       e22: 1
@@ -632,14 +632,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.64145136
+    - e00: 0.8964582
       e01: 0
       e02: 0
-      e03: 12.885605
+      e03: -26.914536
       e10: 0
-      e11: 0.64145136
+      e11: 0.8964582
       e12: 0
-      e13: 243.0239
+      e13: 232.29965
       e20: 0
       e21: 0
       e22: 1
@@ -721,20 +721,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Player
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/coopersaye/Desktop/Unity Projects/Pieces
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e3b0000
-    m_LastClickedID: 15134
-    m_ExpandedIDs: 000000001e3b000000ca9a3b
+    m_SelectedIDs: 403b0000
+    m_LastClickedID: 15168
+    m_ExpandedIDs: 000000001c3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -762,7 +762,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e3b0000
+    m_ExpandedIDs: 000000001c3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -793,18 +793,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000c23e0000164200006a3f00009e3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Idle_1.2
+      m_OriginalName: Idle_1.2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 34020
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
@@ -910,4 +910,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 339
+  m_LastVerticalScrollValue: 0
